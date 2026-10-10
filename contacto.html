@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Un espacio para ti</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <a href="index.html" class="logo">♡ Un espacio para ti</a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="psicologa.html">Mi perfil</a>
+            <a href="cita.html">Primera cita</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <h1>Estamos aquí para orientarte</h1>
+        <p>Utiliza este formulario de demostración para conocer cómo podría funcionar el contacto con la profesional.</p>
+
+        <form id="formContacto" class="formulario">
+            <label for="nombreContacto">Nombre:</label>
+            <input type="text" id="nombreContacto" required>
+
+            <label for="correoContacto">Correo electrónico:</label>
+            <input type="email" id="correoContacto" required>
+
+            <label for="mensajeContacto">Mensaje general:</label>
+            <textarea id="mensajeContacto" placeholder="Escribe una pregunta general, sin incluir datos personales o información de salud." required></textarea>
+
+            <button type="submit" class="boton">Probar formulario</button>
+        </form>
+
+        <p id="resultadoContacto" role="status" aria-live="polite"></p>
+
+        <p class="aviso">
+            Este formulario es solo una demostración. No envía ni almacena mensajes.
+        </p>
+
+        <a href="index.html" class="boton">Volver al inicio</a>
+    </main>
+
+    <footer>© 2026 Un espacio para ti | Prototipo escolar</footer>
+</body>
+</html>

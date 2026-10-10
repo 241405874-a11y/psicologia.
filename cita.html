@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera cita | Un espacio para ti</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <a href="index.html" class="logo">♡ Un espacio para ti</a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="psicologa.html">Mi perfil</a>
+            <a href="cita.html">Primera cita</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <h1>Solicita tu primera cita</h1>
+        <p>Completa los siguientes datos de contacto para conocer las opciones de atención.</p>
+
+        <form id="formCita" class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="modalidad">Modalidad de atención preferida:</label>
+            <select id="modalidad" name="modalidad" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Presencial">Presencial</option>
+                <option value="En línea">En línea</option>
+                <option value="Por consultar">Por consultar</option>
+            </select>
+
+            <label for="horario">Horario de preferencia:</label>
+            <select id="horario" name="horario" required>
+                <option value="">Selecciona un horario</option>
+                <option value="Mañana">Mañana</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Por consultar">Por consultar</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="privacidad" required>
+                Entiendo que este formulario es una demostración escolar
+                y que mis datos no serán enviados.
+            </label>
+
+            <button type="submit" class="boton">Probar solicitud</button>
+        </form>
+
+        <p id="resultado" role="status" aria-live="polite"></p>
+
+        <p class="aviso">
+            Importante: este formulario funciona únicamente como demostración.
+            No envía la solicitud, no guarda los datos y no confirma una cita real.
+            No introduzcas información personal real.
+        </p>
+
+        <a href="index.html" class="boton">Volver al inicio</a>
+    </main>
+
+    <footer>© 2026 Un espacio para ti | Prototipo escolar</footer>
+</body>
+</html>
